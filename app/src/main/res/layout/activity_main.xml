@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/element_spacing" />
+
+        <!-- Иллюстрация с дополнительным событием -->
+        <ImageView
+            android:id="@+id/ivGreeting"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/ic_greeting"
+            android:scaleType="matrix"
+            android:contentDescription="@string/image_hint"
+            android:onClick="onImageClick"
+            android:layout_marginBottom="@dimen/element_spacing" />
+
+        <!-- Поле ввода имени -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_size"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/small_spacing" />
+
+        <!-- Флажок вежливого приветствия -->
+        <CheckBox
+            android:id="@+id/cbPolite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/polite_checkbox"
+            android:textSize="@dimen/text_size"
+            android:layout_marginBottom="@dimen/element_spacing" />
+
+        <!-- Кнопка расчёта -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/button_selector"
+            android:text="@string/calculate_button"
+            android:textColor="@color/white"
+            android:onClick="onCalculateClick" />
+
+        <!-- Кнопка перехода -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/button_selector"
+            android:text="@string/next_button"
+            android:textColor="@color/white"
+            android:onClick="onNextClick" />
+
+        <!-- Результат -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_placeholder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/element_spacing" />
+
+        <!-- Результат, возвращённый вторым экраном -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/small_spacing" />
+
+    </LinearLayout>
+
+</ScrollView>

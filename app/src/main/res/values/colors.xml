@@ -1,0 +1,11 @@
+
+<resources>
+    <color name="primary">#4267B2</color>
+    <color name="primary_dark">#263F78</color>
+    <color name="background">#F5F7FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#222222</color>
+    <color name="text_secondary">#777777</color>
+    <color name="button_pressed">#263F78</color>
+    <color name="button_normal">#4267B2</color>
+</resources>

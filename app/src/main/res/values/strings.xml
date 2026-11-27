@@ -1,0 +1,41 @@
+
+<resources>
+    <string name="app_name">Генератор приветствий</string>
+
+    <!-- Заголовки -->
+    <string name="main_title">Генератор приветствий</string>
+    <string name="second_title">Ваше приветствие</string>
+
+    <!-- Поля ввода -->
+    <string name="name_hint">Введите ваше имя</string>
+    <string name="polite_checkbox">Вежливо</string>
+
+    <!-- Кнопки -->
+    <string name="calculate_button">Рассчитать</string>
+    <string name="next_button">Далее</string>
+    <string name="confirm_button">Подтвердить</string>
+    <string name="back_button">Назад</string>
+
+    <!-- Результаты -->
+    <string name="result_placeholder">Здесь появится приветствие</string>
+    <string name="greeting_result">%1$s</string>
+    <string name="confirmed_message">Приветствие подтверждено!</string>
+
+    <!-- Ошибки и подсказки -->
+    <string name="empty_name_error">Введите имя</string>
+    <string name="invalid_name_error">Имя должно содержать только буквы</string>
+    <string name="image_hint">Введите имя и выберите вежливое приветствие, если оно необходимо</string>
+
+    <!-- Второй экран -->
+    <string name="received_greeting">Сгенерированное приветствие:</string>
+
+    <!-- Три шаблона приветствия -->
+    <string-array name="greeting_templates">
+        <item>Привет, %1$s!</item>
+        <item>Добрый день, %1$s!</item>
+        <item>Рады приветствовать вас, %1$s!</item>
+    </string-array>
+
+    <!-- Вежливое обращение -->
+    <string name="polite_prefix">Уважаемый(ая), </string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSecond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/screen_padding"
+    android:background="@color/background">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvSecondTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_title"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/element_spacing" />
+
+    <!-- Векторная иллюстрация -->
+    <ImageView
+        android:id="@+id/ivConfirmation"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:src="@drawable/ic_confirmation"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/confirmed_message"
+        android:layout_marginBottom="@dimen/element_spacing" />
+
+    <!-- Подпись -->
+    <TextView
+        android:id="@+id/tvReceivedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/received_greeting"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/text_secondary"
+        android:gravity="center" />
+
+    <!-- Полученное приветствие -->
+    <TextView
+        android:id="@+id/tvReceivedGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_marginBottom="@dimen/element_spacing" />
+
+    <!-- Подтверждение -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_selector"
+        android:text="@string/confirm_button"
+        android:textColor="@color/white"
+        android:onClick="onConfirmClick" />
+
+    <!-- Возврат -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:background="@drawable/button_selector"
+        android:text="@string/back_button"
+        android:textColor="@color/white"
+        android:onClick="onBackClick" />
+
+</LinearLayout>
